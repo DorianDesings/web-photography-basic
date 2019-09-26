@@ -1,0 +1,8 @@
+.header {
+  padding: 1em 0;
+  @include laptop {
+    background-color: royalblue;
+    grid-column: 2 / -1;
+    grid-row: 1 / 2;
+  }
+}
