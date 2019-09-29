@@ -1,7 +1,9 @@
 .header {
   padding: 1em 0;
   @include laptop {
-    background-color: royalblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     grid-column: 2 / -1;
     grid-row: 1 / 2;
   }
