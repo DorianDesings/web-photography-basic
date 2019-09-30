@@ -1,0 +1,36 @@
+.toggle-menu {
+  height: 50px;
+  width: 40px;
+
+  &__icon {
+    height: 50px;
+    width: 40px;
+    position: relative;
+
+    & .first-bar,
+    & .second-bar,
+    & .third-bar {
+      position: absolute;
+      width: 30px;
+      height: 3px;
+      background: #ccc;
+      border-radius: 5px;
+    }
+
+    & .first-bar {
+      top: 15px;
+    }
+
+    & .second-bar {
+      top: 25px;
+    }
+
+    & .third-bar {
+      top: 35px;
+    }
+  }
+
+  @include laptop {
+    display: none;
+  }
+}

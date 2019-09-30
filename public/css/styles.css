@@ -119,14 +119,34 @@ body { background-color: #222; color: #ccc; min-height: 100vh; }
 
 @media screen and (min-width: 1024px) { .header { display: flex; align-items: center; justify-content: space-between; grid-column: 2 / -1; grid-row: 1 / 2; } }
 
-.topbar { display: flex; align-items: center; justify-content: space-around; width: 60vw; position: fixed; top: 0; left: 50%; transform: translateX(-50%); height: 50px; background-color: #666; }
+.topbar { display: flex; align-items: center; justify-content: space-between; width: 100vw; position: fixed; top: 0; left: 50%; transform: translateX(-50%); height: 50px; background-color: #666; padding-left: 70px; }
 
 .topbar__icon { width: 90px; display: flex; justify-content: space-around; }
 
-@media screen and (min-width: 1024px) { .topbar { height: 60px; left: 100%; width: 20vw; justify-content: space-evenly; transform: translateX(-100%); } }
+@media screen and (min-width: 1024px) { .topbar { height: 60px; left: 100%; width: 35vw; justify-content: space-evenly; transform: translateX(-100%); background-color: transparent; } }
 
 @media screen and (min-width: 1400px) { .topbar { width: 15vw; } }
 
-@media screen and (min-width: 1024px) { .sidebar { background-color: salmon; grid-column: 1 / 2; grid-row: 1 / -1; } }
+.toggle-menu { height: 50px; width: 40px; }
 
-@media screen and (min-width: 1024px) { .main { background-color: seagreen; grid-column: 2 / 3; grid-row: 2 / 3; } }
+.toggle-menu__icon { height: 50px; width: 40px; position: relative; }
+
+.toggle-menu__icon .first-bar, .toggle-menu__icon .second-bar, .toggle-menu__icon .third-bar { position: absolute; width: 30px; height: 3px; background: #ccc; border-radius: 5px; }
+
+.toggle-menu__icon .first-bar { top: 15px; }
+
+.toggle-menu__icon .second-bar { top: 25px; }
+
+.toggle-menu__icon .third-bar { top: 35px; }
+
+@media screen and (min-width: 1024px) { .toggle-menu { display: none; } }
+
+.logo { width: 50px; display: flex; align-items: center; justify-content: center; position: fixed; top: 0.2rem; left: 0.1rem; z-index: 10; }
+
+.logo__img { max-width: 100%; }
+
+@media screen and (min-width: 1024px) { .logo { position: absolute; left: 2%; top: 1rem; width: 10%; } }
+
+@media screen and (min-width: 1024px) { .sidebar { background-color: #343434; grid-column: 1 / 2; grid-row: 1 / -1; } }
+
+@media screen and (min-width: 1024px) { .main { grid-column: 2 / 3; grid-row: 2 / 3; } }
