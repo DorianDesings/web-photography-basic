@@ -141,6 +141,16 @@ body { background-color: #222; color: #ccc; min-height: 100vh; }
 
 @media screen and (min-width: 1024px) { .toggle-menu { display: none; } }
 
+.main-menu { list-style: none; padding-left: 0; margin-top: 0; margin-bottom: 0; margin-top: 1rem; border-top: 1px solid #333; background-color: #666; }
+
+.main-menu__item { text-align: center; text-transform: uppercase; line-height: 2.5; border-bottom: 1px solid #333; }
+
+@media screen and (min-width: 1024px) { .main-menu__item { line-height: 3; border: none; } }
+
+.main-menu__link { text-decoration: none; color: #eee; }
+
+@media screen and (min-width: 1024px) { .main-menu { border: none; height: 100vh; margin-top: 0; display: flex; flex-direction: column; justify-content: center; background-color: transparent; font-size: 1.5rem; } }
+
 .logo { width: 50px; display: flex; align-items: center; justify-content: center; position: fixed; top: 0.2rem; left: 0.1rem; z-index: 10; }
 
 .logo__img { max-width: 100%; }
