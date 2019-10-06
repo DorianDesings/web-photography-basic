@@ -15,6 +15,7 @@
       height: 3px;
       background: #ccc;
       border-radius: 5px;
+      transition: transform 0.2s;
     }
 
     & .first-bar {
@@ -28,6 +29,18 @@
     & .third-bar {
       top: 35px;
     }
+  }
+
+  .show .first-bar {
+    transform: rotate(-45deg);
+    top: 1.5rem;
+  }
+  .show .second-bar {
+    width: 0;
+  }
+  .show .third-bar {
+    transform: rotate(45deg);
+    top: 1.5rem;
   }
 
   @include laptop {
