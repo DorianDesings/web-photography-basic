@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600");
+@import url("https://fonts.googleapis.com/css?family=Cabin:400,600");
+:root { --primary-color: #3f95ea; --secondary-color: #52d3aa; --danger-color: #ff3c32; --cta-color: #fba905; --dark-color: #343434; --dark-color-2: #666; --background-color: #222; --text-color: #eee; }
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document ========================================================================== */
 /** 1. Correct the line height in all browsers. 2. Prevent adjustments of font size after orientation changes in iOS. */
@@ -111,7 +115,7 @@ template { display: none; }
 /** Add the correct display in IE 10. */
 [hidden] { display: none; }
 
-body { background-color: #222; color: #ccc; min-height: 100vh; }
+body { background-color: var(--background-color); color: var(--text-color); min-height: 100vh; font-family: "Cabin", "sans-serif"; }
 
 @media screen and (min-width: 1024px) { body { display: grid; grid-template-columns: 15% 85%; grid-template-rows: 60px 1fr; } }
 
@@ -119,7 +123,7 @@ body { background-color: #222; color: #ccc; min-height: 100vh; }
 
 @media screen and (min-width: 1024px) { .header { display: flex; align-items: center; justify-content: space-between; grid-column: 2 / -1; grid-row: 1 / 2; } }
 
-.topbar { display: flex; align-items: center; justify-content: space-between; width: 100vw; position: fixed; top: 0; left: 50%; transform: translateX(-50%); height: 50px; background-color: #666; padding-left: 70px; z-index: 100; }
+.topbar { display: flex; align-items: center; justify-content: space-between; width: 100vw; position: fixed; top: 0; left: 50%; transform: translateX(-50%); height: 50px; background-color: var(--dark-color-2); padding-left: 70px; z-index: 100; }
 
 .topbar__icon { width: 90px; display: flex; justify-content: space-around; }
 
@@ -131,7 +135,7 @@ body { background-color: #222; color: #ccc; min-height: 100vh; }
 
 .toggle-menu__icon { height: 50px; width: 40px; position: relative; }
 
-.toggle-menu__icon .first-bar, .toggle-menu__icon .second-bar, .toggle-menu__icon .third-bar { position: absolute; width: 30px; height: 3px; background: #ccc; border-radius: 5px; transition: transform 0.2s; }
+.toggle-menu__icon .first-bar, .toggle-menu__icon .second-bar, .toggle-menu__icon .third-bar { position: absolute; width: 30px; height: 3px; background: var(--text-color); border-radius: 5px; transition: transform 0.2s; }
 
 .toggle-menu__icon .first-bar { top: 15px; }
 
@@ -147,13 +151,13 @@ body { background-color: #222; color: #ccc; min-height: 100vh; }
 
 @media screen and (min-width: 1024px) { .toggle-menu { display: none; } }
 
-.main-menu { list-style: none; padding-left: 0; margin-top: 0; margin-bottom: 0; border-top: 1px solid #333; background-color: #666; }
+.main-menu { list-style: none; padding-left: 0; margin-top: 0; margin-bottom: 0; border-top: 1px solid var(--dark-color); background-color: var(--dark-color-2); }
 
-.main-menu__item { text-align: center; text-transform: uppercase; line-height: 2.5; border-bottom: 1px solid #333; }
+.main-menu__item { text-align: center; text-transform: uppercase; line-height: 2.5; border-bottom: 1px solid var(--dark-color); }
 
 @media screen and (min-width: 1024px) { .main-menu__item { line-height: 3; border: none; } }
 
-.main-menu__link { text-decoration: none; color: #eee; }
+.main-menu__link { text-decoration: none; color: var(--text-color); }
 
 @media screen and (min-width: 1024px) { .main-menu { border: none; height: 100vh; margin-top: 0; display: flex; flex-direction: column; justify-content: center; background-color: transparent; font-size: 1.5rem; } }
 
@@ -163,7 +167,7 @@ body { background-color: #222; color: #ccc; min-height: 100vh; }
 
 @media screen and (min-width: 1024px) { .logo { position: absolute; left: 2%; top: 1rem; width: 10%; } }
 
-.sidebar { position: fixed; background-color: #343434; width: 100%; height: 100vh; top: 50px; transform: translateY(-100%); z-index: 1; transition: transform 0.3s; }
+.sidebar { position: fixed; background-color: var(--dark-color); width: 100%; height: 100vh; top: 50px; transform: translateY(-100%); z-index: 1; transition: transform 0.3s; }
 
 @media screen and (min-width: 1024px) { .sidebar { grid-column: 1 / 2; grid-row: 1 / -1; width: 15%; top: 0; transform: translateY(0); } }
 

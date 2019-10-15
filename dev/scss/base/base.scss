@@ -1,7 +1,8 @@
 body {
-  background-color: #222;
-  color: #ccc;
+  background-color: $background-color;
+  color: $text-color;
   min-height: 100vh;
+  font-family: $main-font, "sans-serif";
 
   @include laptop {
     display: grid;

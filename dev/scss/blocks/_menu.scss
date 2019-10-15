@@ -1,13 +1,13 @@
 .main-menu {
   @include reset-list;
-  border-top: 1px solid #333;
-  background-color: #666;
+  border-top: 1px solid $dark-color;
+  background-color: $dark-color-2;
 
   &__item {
     text-align: center;
     text-transform: uppercase;
     line-height: 2.5;
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid $dark-color;
 
     @include laptop {
       line-height: 3;
@@ -17,7 +17,7 @@
 
   &__link {
     text-decoration: none;
-    color: #eee;
+    color: $text-color;
   }
 
   @include laptop {
