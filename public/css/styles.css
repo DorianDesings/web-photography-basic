@@ -178,3 +178,15 @@ body { background-color: var(--background-color); color: var(--text-color); min-
 .lightbox { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.7); z-index: 1000; display: flex; justify-content: center; align-items: center; transform: scale(0); transition: transform 0.3s; }
 
 .lightbox--show { transform: scale(1); }
+
+.form { background-color: var(--dark-color); padding: 1rem; border-radius: 15px; width: 100%; max-width: 360px; }
+
+.form__field { display: flex; justify-content: flex-start; flex-direction: column; align-items: center; }
+
+.form__label, .form__input { width: 100%; margin-bottom: 1rem; background: none; border: none; outline: none; color: var(--text-color); }
+
+.form__input { margin-bottom: 2rem; border-bottom: 1px solid var(--text-color); }
+
+.form__submit { display: inline-block; padding: 0.5rem 1rem; color: var(--text-color); background-color: var(--primary-color); border: none; cursor: pointer; border-radius: 0.25rem; transition: transform 0.2s; }
+
+.form__submit:active, .form__submit:focus { transform: scale(0.9); }
