@@ -10,9 +10,9 @@
   </head>
   <body>
     <header class="header" id="header"><a class="logo" href="/"><img src="./assets/img/logo.png" alt="web logo"/></a>
-      <div class="topbar">
-        <div class="topbar__icon"><i class="fa fa-user"></i><span>Log in</span></div>
-        <div class="topbar__icon"><i class="fa fa-user-plus"></i><span>Register</span></div>
+      <div class="topbar" id="topbar">
+        <div class="topbar__icon" data-type="login"><i class="fa fa-user"></i><span>Log in</span></div>
+        <div class="topbar__icon" data-type="register"><i class="fa fa-user-plus"></i><span>Register</span></div>
         <div class="toggle-menu">
           <div class="toggle-menu__icon" id="toggle-menu">
             <div class="first-bar"></div>
@@ -35,6 +35,21 @@
       </nav>
     </div>
     <main class="main"></main>
+    <div class="lightbox" id="login-modal">
+      <form class="form" id="login-form">
+        <div class="form__field">
+          <label class="form__label" for="login-email">Email</label>
+          <input class="form__input" type="email" name="email" id="login-email"/>
+        </div>
+        <div class="form__field">
+          <label class="form__label" for="login-password">Password</label>
+          <input class="form__input" type="password" name="password" id="login-password"/>
+        </div>
+        <div class="form__field">
+          <input class="form__submit" type="submit" value="Send"/>
+        </div>
+      </form>
+    </div>
     <script src="js/scripts-min.js"></script>
   </body>
 </html>
