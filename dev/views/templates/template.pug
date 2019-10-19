@@ -27,6 +27,9 @@ html(lang="en")
         #sidebar.sidebar
             block menu
         main.main
+            block title
+            block main
         include ../includes/login-modal
         include ../includes/register-modal
+        block scripts
         script(src="js/scripts-min.js")

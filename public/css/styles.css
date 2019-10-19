@@ -173,7 +173,9 @@ body { background-color: var(--background-color); color: var(--text-color); min-
 
 .sidebar.show { transform: translateY(0); }
 
-@media screen and (min-width: 1024px) { .main { grid-column: 2 / 3; grid-row: 2 / 3; } }
+.main { padding: 0.5rem 1rem; }
+
+@media screen and (min-width: 1024px) { .main { grid-column: 2 / 3; grid-row: 2 / 3; padding: 0 2rem; } }
 
 .lightbox { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.7); z-index: 1000; display: flex; justify-content: center; align-items: center; transform: scale(0); transition: transform 0.3s; }
 
@@ -190,3 +192,7 @@ body { background-color: var(--background-color); color: var(--text-color); min-
 .form__submit { display: inline-block; padding: 0.5rem 1rem; color: var(--text-color); background-color: var(--primary-color); border: none; cursor: pointer; border-radius: 0.25rem; transition: transform 0.2s; }
 
 .form__submit:active, .form__submit:focus { transform: scale(0.9); }
+
+.title { padding: 0 0 0.5rem; border-bottom: 1px solid var(--text-color); text-align: left; }
+
+@media screen and (min-width: 1024px) { .title { padding: 0.5rem 0; border-top: 1px solid var(--text-color); } }
