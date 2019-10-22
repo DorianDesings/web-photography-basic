@@ -196,3 +196,13 @@ body { background-color: var(--background-color); color: var(--text-color); min-
 .title { padding: 0 0 0.5rem; border-bottom: 1px solid var(--text-color); text-align: left; }
 
 @media screen and (min-width: 1024px) { .title { padding: 0.5rem 0; border-top: 1px solid var(--text-color); } }
+
+@media screen and (min-width: 1024px) { .about { position: relative; height: 60vh; display: grid; grid-template-columns: 60% 40%; justify-items: center; align-items: center; }
+  .about__img, .about__text { position: absolute; top: 0; width: 50%; opacity: 0; transition: opacity 1s; }
+  .about__img { left: 0; }
+  .about__text { left: 50%; font-size: 2rem; padding: 0 2rem; }
+  .about__text h2 { margin: 0; } }
+
+.show { opacity: 1; }
+
+.controls { width: 50%; margin: 0 auto; font-size: 2rem; display: flex; justify-content: space-between; color: var(--text-color); }

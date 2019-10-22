@@ -1,0 +1,46 @@
+.about {
+  @include laptop {
+    position: relative;
+    height: 60vh;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    justify-items: center;
+    align-items: center;
+
+    &__img,
+    &__text {
+      position: absolute;
+      top: 0;
+      width: 50%;
+      opacity: 0;
+      transition: opacity 1s;
+    }
+
+    &__img {
+      left: 0;
+    }
+
+    &__text {
+      left: 50%;
+      font-size: 2rem;
+      padding: 0 2rem;
+
+      & h2 {
+        margin: 0;
+      }
+    }
+  }
+}
+
+.show {
+  opacity: 1;
+}
+
+.controls {
+  width: 50%;
+  margin: 0 auto;
+  font-size: 2rem;
+  display: flex;
+  justify-content: space-between;
+  color: $text-color;
+}
