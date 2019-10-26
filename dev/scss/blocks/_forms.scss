@@ -43,3 +43,43 @@
     }
   }
 }
+
+.form-contact {
+  display: grid;
+  gap: 30px;
+  width: 320px;
+  margin: 0 auto;
+  justify-items: center;
+  padding-top: 2rem;
+
+  @include laptop {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto 2rem;
+    width: 50%;
+  }
+
+  &__fields {
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  &__input,
+  &__textarea {
+    height: 40px;
+    background-color: $dark-color;
+    color: $text-color;
+    border: 1px solid;
+    outline: none;
+    padding-left: 0.5rem;
+  }
+
+  &__textarea {
+    resize: none;
+    width: 320px;
+    height: 150px;
+    padding: 0.5rem;
+  }
+}
