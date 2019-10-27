@@ -1,10 +1,28 @@
 .contact {
   background-color: $dark-color;
-  height: 90vh;
+  position: relative;
+  height: 120vh;
   text-align: center;
 
   @include laptop {
     height: calc(100vh - 250px);
-    position: relative;
+  }
+
+  &__map {
+    width: 100%;
+    text-align: center;
+    @include laptop {
+      width: 50%;
+      margin: 0 auto 2rem;
+    }
+
+    & iframe {
+      width: 320px;
+      height: 300px;
+      margin-top: 2rem;
+      @include laptop {
+        width: 600px;
+      }
+    }
   }
 }
