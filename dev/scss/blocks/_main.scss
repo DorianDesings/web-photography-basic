@@ -4,5 +4,7 @@
     grid-column: 2 / 3;
     grid-row: 2 / 3;
     padding: 0 2rem;
+    overflow: auto;
+    height: 90vh;
   }
 }

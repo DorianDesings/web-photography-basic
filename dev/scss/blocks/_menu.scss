@@ -18,6 +18,11 @@
   &__link {
     text-decoration: none;
     color: $text-color;
+    font-size: 1.2rem;
+
+    &--active {
+      color: $primary-color;
+    }
   }
 
   @include laptop {
@@ -28,6 +33,5 @@
     flex-direction: column;
     justify-content: center;
     background-color: transparent;
-    font-size: 1.5rem;
   }
 }

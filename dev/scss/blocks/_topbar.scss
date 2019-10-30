@@ -16,15 +16,18 @@
     width: 90px;
     display: flex;
     justify-content: space-around;
+    cursor: pointer;
   }
 
   @include laptop {
-    height: 60px;
+    height: 80px;
     left: 100%;
     width: 35vw;
     justify-content: space-evenly;
     transform: translateX(-100%);
     background-color: transparent;
+    padding-left: 0;
+    padding-right: 1rem;
   }
 
   @include desktop {
